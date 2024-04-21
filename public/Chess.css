@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 10px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.divv {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0px;
+}
+
+.box {
+    margin: .5px;
+    width: 75px;
+    height: 75px;
+}
+
+#tog {
+    margin: 10px 0px;
+}
+
+
+.allimg {
+    width: 45px;
+    position: relative;
+    bottom: 5px;
+}
+
+.allpawn {
+    transform: scale(.7);
+}
+
+.authcont {
+    width: 100vw;
+}
+
+.author {
+    float: right;
+    margin-right: 50px;
+
+}
+
+
+@media (max-width:650px){
+
+    #tog {
+        margin-bottom: 70px;
+
+    }
+
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .allimg {
+        width: 7vw;
+    }
+}
+
+/* Add your CSS styles for the chessboard here */
+/* Add your CSS styles for the chessboard here */
+.box {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+}
+
+.Wrook {
+    background-image: url('Wrook.png');
+    background-size: cover;
+}
+
+.Brook {
+    background-image: url('Brook.png');
+    background-size: cover;
+}
+
+/* Add your CSS styles here */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    z-index: 1000;
+}
